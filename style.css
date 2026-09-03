@@ -1,15 +1,68 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    color-scheme: dark;
+}
+
+body {
+    background: #121212;
+    color: #e6e6e6;
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Segoe UI", sans-serif;
+    line-height: 1.7;
 }
 
 #wrap {
-    width: 1000px;
+    max-width: 720px;
     margin: 0 auto;
+    padding: 64px 24px 96px;
 }
 
-h1,h2{
+h1, h2 {
     text-align: center;
-    margin: 0 0 10px 0;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+h1 {
+    font-size: 1.9rem;
+    color: #ffffff;
+}
+
+body > #wrap > p {
+    text-align: center;
+    color: #999999;
+    margin-bottom: 56px;
+}
+
+section {
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin-bottom: 32px;
+}
+
+section h2 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px 16px;
+}
+
+li {
+    color: #cccccc;
+    padding: 6px 0;
+    border-bottom: 1px solid #1f1f1f;
 }
